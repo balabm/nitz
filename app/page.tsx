@@ -131,7 +131,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-resort-navy dark:text-resort-cream mb-4">Gallery</h2>
             <p className="text-base sm:text-lg text-resort-navy/80 dark:text-resort-cream/80 mb-10 sm:mb-12 max-w-3xl">
-              Discover the beauty of Nitz the Loft.
+              Discover the beauty of NITZ THE LOFT.
             </p>
             <Gallery />
           </div>
@@ -143,7 +143,7 @@ export default function Home() {
             <div className="text-center mb-12">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-resort-navy dark:text-resort-cream mb-4">Book Your Stay</h2>
               <p className="text-base sm:text-lg text-resort-navy/80 dark:text-resort-cream/80 max-w-2xl mx-auto">
-                Reserve your luxury accommodation at Nitz the Loft.
+                Reserve your luxury accommodation at NITZ THE LOFT.
               </p>
             </div>
             <BookingForm />
@@ -154,7 +154,7 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className="min-h-[100svh] px-4 sm:px-6 lg:px-8 py-16 sm:py-20 bg-resort-cream dark:bg-black transition-colors scroll-mt-24">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-resort-navy dark:text-resort-cream mb-4">About Nitz the Loft</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-resort-navy dark:text-resort-cream mb-4">About NITZ THE LOFT</h2>
           <p className="text-base sm:text-lg text-resort-navy/80 dark:text-resort-cream/80 mb-8 max-w-3xl">
             Experience luxury living in Auroville with our beautifully designed accommodations.
           </p>

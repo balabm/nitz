@@ -73,7 +73,7 @@ export default function Hero() {
           className="relative z-10 text-center px-6 max-w-4xl"
         >
           <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-serif drop-shadow-2xl text-white">
-            Nitz the Loft
+            NITZ THE LOFT
           </h1>
 
           <p className="mt-4 text-base sm:text-lg md:text-xl max-w-2xl mx-auto text-resort-cream/95 drop-shadow-lg">

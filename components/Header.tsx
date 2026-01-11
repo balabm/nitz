@@ -29,7 +29,7 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur bg-white/80 dark:bg-black/90 border-b border-resort-navy/10 dark:border-resort-cream/10 transition-colors">
       <div className="max-w-7xl mx-auto flex items-center justify-between p-4">
         <Link href="/" className="text-2xl font-serif tracking-wide text-resort-navy dark:text-resort-cream">
-          Nitz the Loft
+          NITZ THE LOFT
         </Link>
 
         <nav className="hidden md:flex gap-6 items-center">

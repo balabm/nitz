@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand Section */}
           <div>
-            <h3 className="text-2xl font-serif text-resort-cream mb-2">Nitz the Loft</h3>
+            <h3 className="text-2xl font-serif text-resort-cream mb-2">NITZ THE LOFT</h3>
             <p className="text-sm text-resort-cream/80 mb-4">
               Experience luxury living in Auroville ✨
             </p>
@@ -37,7 +37,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 pt-6 border-t border-resort-cream/20 text-center text-sm text-resort-cream/70">
-          <p>© {new Date().getFullYear()} Nitz the Loft, Auroville. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} NITZ THE LOFT, Auroville. All rights reserved.</p>
         </div>
       </div>
     </footer>

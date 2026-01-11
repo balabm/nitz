@@ -13,20 +13,20 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: 'Nitz the Loft - Luxury Living in Auroville',
-  description: 'Experience luxury living in Auroville at Nitz the Loft ✨ Beautifully designed rooms with private jacuzzi available.',
+  title: 'NITZ THE LOFT - Luxury Living in Auroville',
+  description: 'Experience luxury living in Auroville at NITZ THE LOFT ✨ Beautifully designed rooms with private jacuzzi available.',
   keywords: 'luxury loft, Auroville, jacuzzi, private rooms, boutique hotel, Auroville accommodation',
   openGraph: {
-    title: 'Nitz the Loft — Luxury Living in Auroville',
+    title: 'NITZ THE LOFT — Luxury Living in Auroville',
     description: 'Beautifully designed rooms with private jacuzzi for a relaxing and luxurious getaway.',
     url: siteUrl,
-    siteName: 'Nitz the Loft',
+    siteName: 'NITZ THE LOFT',
     images: [
       {
         url: 'media/WAA_6656-HDR.JPG',
         width: 1200,
         height: 630,
-        alt: 'Nitz the Loft - Luxury Accommodation'
+        alt: 'NITZ THE LOFT - Luxury Accommodation'
       }
     ],
     locale: 'en_US',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Hotel',
-  name: 'Nitz the Loft',
+  name: 'NITZ THE LOFT',
   description: 'Experience luxury living in Auroville with beautifully designed rooms featuring private jacuzzi.',
   url: 'https://nitztheloft.com',
   telephone: '+91-413-262-2222',
