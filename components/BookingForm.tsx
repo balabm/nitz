@@ -30,12 +30,12 @@ export default function BookingForm() {
   };
 
   const inputClass =
-    'p-3 rounded bg-white dark:bg-black text-resort-navy dark:text-resort-cream border border-resort-navy/20 dark:border-resort-cream/30 focus:outline-none focus:ring-2 focus:ring-resort-orange w-full';
+    'p-3 rounded bg-white dark:bg-white/10 text-resort-navy dark:text-resort-cream border border-resort-navy/20 dark:border-resort-cream/30 focus:outline-none focus:ring-2 focus:ring-resort-orange w-full';
 
   return (
     <form
       onSubmit={submit}
-      className="bg-white/90 dark:bg-black/90 backdrop-blur p-6 rounded-lg grid grid-cols-1 md:grid-cols-2 gap-4 transition-colors shadow-lg border border-resort-navy/10 dark:border-resort-cream/20"
+      className="bg-white/90 dark:bg-white/5 backdrop-blur p-6 rounded-lg grid grid-cols-1 md:grid-cols-2 gap-4 transition-colors shadow-lg border border-resort-navy/10 dark:border-resort-cream/20"
     >
       <input
         aria-label="Full name"
@@ -106,18 +106,18 @@ export default function BookingForm() {
       <div className="md:col-span-2 flex flex-col sm:flex-row items-center justify-between gap-3">
         <p className="text-xs text-resort-navy/60 dark:text-resort-cream/60">
           Prefer to talk?{' '}
-          <a href={site.contact.phoneHref} className="underline hover:text-resort-orange transition">
+          <a href={site.contact.phoneHref} className="underline hover:text-resort-orange dark:hover:text-resort-gold transition">
             Call us
           </a>{' '}
           or{' '}
-          <a href={`mailto:${site.contact.email}`} className="underline hover:text-resort-orange transition">
+          <a href={`mailto:${site.contact.email}`} className="underline hover:text-resort-orange dark:hover:text-resort-gold transition">
             email us
           </a>
           .
         </p>
         <button
           type="submit"
-          className="bg-[#25D366] text-white px-5 py-3 rounded-md hover:bg-[#1eb856] transition font-semibold w-full sm:w-auto"
+          className="bg-resort-wa text-white px-5 py-3 rounded-md hover:bg-resort-wa-dark transition font-semibold w-full sm:w-auto"
         >
           Send Booking Request on WhatsApp
         </button>

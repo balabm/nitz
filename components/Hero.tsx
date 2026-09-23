@@ -94,7 +94,7 @@ export default function Hero() {
               href={waLink(genericWaMessage)}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto bg-[#25D366] text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-[#1eb856] focus:outline-none focus:ring-4 focus:ring-[#25D366]/40 transition"
+              className="w-full sm:w-auto bg-resort-wa text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-resort-wa-dark focus:outline-none focus:ring-4 focus:ring-resort-wa/40 transition"
             >
               Book on WhatsApp
             </a>

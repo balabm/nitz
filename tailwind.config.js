@@ -5,21 +5,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Updated resort color palette - Complete black for dark mode
-        'resort-navy': '#000000',      // Dark navy background
-        'resort-dark': '#000000',       // Complete black for night mode
-        'resort-orange': '#d97706',     // Warm orange accent
-        'resort-terracotta': '#c2410c', // Terracotta/rust accent
-        'resort-cream': '#f5f1ea',      // Light cream for text
-        'resort-beige': '#e8dcc8',      // Warm beige
-        'resort-gold': '#f59e0b',       // Golden accent
-        'resort-teal': '#0d9488',       // Accent teal/green
-        // Legacy names for backward compatibility
-        'forest-green': '#000000',
-        'moss': '#0d9488',
-        'sand': '#f5f1ea',
-        'warm-beige': '#e8dcc8',
-        'gold-accent': '#d97706'
+        // Warm, muted palette — consistent across light/dark
+        'resort-navy': '#1c1917',       // warm ink — light-mode text, footer
+        'resort-dark': '#14100c',       // warm near-black — dark-mode surfaces
+        'resort-orange': '#b45309',     // deep amber — primary accent
+        'resort-terracotta': '#9a3412', // rust — hover state (deeper, not brighter)
+        'resort-cream': '#f5f1ea',      // light background
+        'resort-beige': '#ece3d0',      // alternate light background
+        'resort-gold': '#d97706',       // warm gold — dark-mode accents
+        'resort-wa': '#128c7e',         // muted WhatsApp green
+        'resort-wa-dark': '#0f766e'     // WhatsApp hover
       },
       fontFamily: {
         serif: ['var(--font-serif)', 'Playfair Display', 'serif'],

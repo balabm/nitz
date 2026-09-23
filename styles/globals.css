@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 :root {
-  /* Updated resort color palette */
-  --resort-navy: #1a2332;
-  --resort-dark: #0f1419;
-  --resort-orange: #d97706;
+  /* Keep in sync with tailwind.config.js */
+  --resort-navy: #1c1917;
+  --resort-dark: #14100c;
+  --resort-orange: #b45309;
   --resort-cream: #f5f1ea;
-  --resort-beige: #e8dcc8;
-  --resort-gold: #f59e0b;
+  --resort-beige: #ece3d0;
+  --resort-gold: #d97706;
 }
 
 html, body, #__next {
@@ -26,7 +26,7 @@ body {
   color: var(--resort-navy);
 }
 
-body.dark {
+.dark body {
   background: var(--resort-dark);
   color: var(--resort-cream);
 }

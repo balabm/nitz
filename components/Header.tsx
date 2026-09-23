@@ -36,7 +36,7 @@ export default function Header() {
 
   return (
     <>
-    <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur bg-white/80 dark:bg-black/90 border-b border-resort-navy/10 dark:border-resort-cream/10 transition-colors">
+    <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur bg-white/80 dark:bg-resort-dark/90 border-b border-resort-navy/10 dark:border-resort-cream/10 transition-colors">
       <div className="max-w-7xl mx-auto flex items-center justify-between p-4">
         <Link href="/" className="text-2xl font-serif tracking-wide text-resort-navy dark:text-resort-cream">
           NITZ THE LOFT
@@ -52,7 +52,7 @@ export default function Header() {
               {l.label}
             </a>
           ))}
-          <a href="#booking" className="text-white bg-resort-orange px-4 py-2 rounded-lg shadow hover:bg-resort-gold transition">
+          <a href="#booking" className="text-white bg-resort-orange px-4 py-2 rounded-lg shadow hover:bg-resort-terracotta transition">
             Book Now
           </a>
         </nav>
@@ -85,7 +85,7 @@ export default function Header() {
           />
           <div
             id="mobile-nav"
-            className="absolute top-0 right-0 h-full w-[85%] max-w-sm bg-white dark:bg-black border-l border-resort-navy/10 dark:border-resort-cream/10 shadow-2xl p-6 pt-20"
+            className="absolute top-0 right-0 h-full w-[85%] max-w-sm bg-white dark:bg-resort-dark border-l border-resort-navy/10 dark:border-resort-cream/10 shadow-2xl p-6 pt-20"
           >
             <button
               type="button"
@@ -109,7 +109,7 @@ export default function Header() {
               <a
                 href="#booking"
                 onClick={closeMenu}
-                className="mt-2 text-center text-white bg-resort-orange px-4 py-3 rounded-lg shadow hover:bg-resort-gold transition font-semibold"
+                className="mt-2 text-center text-white bg-resort-orange px-4 py-3 rounded-lg shadow hover:bg-resort-terracotta transition font-semibold"
               >
                 Book Now
               </a>

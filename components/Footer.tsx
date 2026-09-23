@@ -23,13 +23,13 @@ export default function Footer() {
               <p>📍 {site.address}</p>
               <p>
                 📞{' '}
-                <a href={site.contact.phoneHref} className="hover:text-resort-orange transition">
+                <a href={site.contact.phoneHref} className="hover:text-resort-gold transition">
                   {site.contact.phoneDisplay}
                 </a>
               </p>
               <p>
                 ✉️{' '}
-                <a href={`mailto:${site.contact.email}`} className="hover:text-resort-orange transition">
+                <a href={`mailto:${site.contact.email}`} className="hover:text-resort-gold transition">
                   {site.contact.email}
                 </a>
               </p>
@@ -40,11 +40,11 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold text-resort-cream mb-3">Quick Links</h4>
             <div className="space-y-2 text-sm text-resort-cream/80">
-              <a href="#rooms" className="block hover:text-resort-orange transition">Rooms</a>
-              <a href="#amenities" className="block hover:text-resort-orange transition">Amenities</a>
-              <a href="#tour" className="block hover:text-resort-orange transition">360° Tour</a>
-              <a href="#policies" className="block hover:text-resort-orange transition">Good to Know</a>
-              <a href="#booking" className="block hover:text-resort-orange transition">Book Now</a>
+              <a href="#rooms" className="block hover:text-resort-gold transition">Rooms</a>
+              <a href="#amenities" className="block hover:text-resort-gold transition">Amenities</a>
+              <a href="#tour" className="block hover:text-resort-gold transition">360° Tour</a>
+              <a href="#policies" className="block hover:text-resort-gold transition">Good to Know</a>
+              <a href="#booking" className="block hover:text-resort-gold transition">Book Now</a>
             </div>
           </div>
         </div>

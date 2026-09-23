@@ -96,7 +96,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
       </head>
-      <body className="bg-resort-cream dark:bg-black font-sans text-resort-navy dark:text-resort-cream min-h-screen transition-colors duration-300">
+      <body className="bg-resort-cream dark:bg-resort-dark font-sans text-resort-navy dark:text-resort-cream min-h-screen transition-colors duration-300">
         <ThemeProvider>
           <a href="#content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-white/90 text-resort-navy px-3 py-2 rounded z-50">
             Skip to content

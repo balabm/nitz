@@ -32,7 +32,7 @@ export default function Home() {
       <Hero />
 
       {/* Rooms Section */}
-      <section id="rooms" className="px-4 sm:px-6 lg:px-8 py-16 sm:py-20 bg-resort-cream dark:bg-black transition-colors scroll-mt-24">
+      <section id="rooms" className="px-4 sm:px-6 lg:px-8 py-16 sm:py-20 bg-resort-cream dark:bg-resort-dark transition-colors scroll-mt-24">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-resort-navy dark:text-resort-cream mb-4">Rooms</h2>
           <p className="text-base sm:text-lg text-resort-navy/80 dark:text-resort-cream/80 mb-10 sm:mb-12 max-w-3xl">
@@ -48,7 +48,7 @@ export default function Home() {
       </section>
 
       {/* Amenities Section */}
-      <section id="amenities" className="px-4 sm:px-6 lg:px-8 py-16 sm:py-20 bg-resort-beige dark:bg-black transition-colors scroll-mt-24">
+      <section id="amenities" className="px-4 sm:px-6 lg:px-8 py-16 sm:py-20 bg-resort-beige dark:bg-resort-dark transition-colors scroll-mt-24">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-resort-navy dark:text-resort-cream mb-4">Amenities</h2>
           <p className="text-base sm:text-lg text-resort-navy/80 dark:text-resort-cream/80 mb-10 sm:mb-12 max-w-3xl">
@@ -73,7 +73,7 @@ export default function Home() {
       </section>
 
       {/* Gallery Section */}
-      <section id="gallery" className="px-4 sm:px-6 lg:px-8 py-16 sm:py-20 bg-resort-cream dark:bg-black transition-colors scroll-mt-24">
+      <section id="gallery" className="px-4 sm:px-6 lg:px-8 py-16 sm:py-20 bg-resort-cream dark:bg-resort-dark transition-colors scroll-mt-24">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-resort-navy dark:text-resort-cream mb-4">Gallery</h2>
           <p className="text-base sm:text-lg text-resort-navy/80 dark:text-resort-cream/80 mb-10 sm:mb-12 max-w-3xl">
@@ -84,7 +84,7 @@ export default function Home() {
       </section>
 
       {/* Explore Auroville Section */}
-      <section id="explore" className="px-4 sm:px-6 lg:px-8 py-16 sm:py-20 bg-resort-beige dark:bg-black transition-colors scroll-mt-24">
+      <section id="explore" className="px-4 sm:px-6 lg:px-8 py-16 sm:py-20 bg-resort-beige dark:bg-resort-dark transition-colors scroll-mt-24">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-resort-navy dark:text-resort-cream mb-4">Explore Auroville</h2>
           <p className="text-base sm:text-lg text-resort-navy/80 dark:text-resort-cream/80 mb-10 sm:mb-12 max-w-3xl">
@@ -118,7 +118,7 @@ export default function Home() {
       </section>
 
       {/* Policies Section */}
-      <section id="policies" className="px-4 sm:px-6 lg:px-8 py-16 sm:py-20 bg-resort-cream dark:bg-black transition-colors scroll-mt-24">
+      <section id="policies" className="px-4 sm:px-6 lg:px-8 py-16 sm:py-20 bg-resort-cream dark:bg-resort-dark transition-colors scroll-mt-24">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-resort-navy dark:text-resort-cream mb-4">Good to Know</h2>
           <p className="text-base sm:text-lg text-resort-navy/80 dark:text-resort-cream/80 mb-10 sm:mb-12 max-w-3xl">
@@ -129,7 +129,7 @@ export default function Home() {
       </section>
 
       {/* Location Section */}
-      <section id="location" className="px-4 sm:px-6 lg:px-8 py-16 sm:py-20 bg-resort-beige dark:bg-black transition-colors scroll-mt-24">
+      <section id="location" className="px-4 sm:px-6 lg:px-8 py-16 sm:py-20 bg-resort-beige dark:bg-resort-dark transition-colors scroll-mt-24">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-resort-navy dark:text-resort-cream mb-4">Find Us</h2>
           <p className="text-base sm:text-lg text-resort-navy/80 dark:text-resort-cream/80 mb-10 sm:mb-12 max-w-3xl">
@@ -137,7 +137,7 @@ export default function Home() {
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
             <div>
-              <h3 className="text-2xl font-serif text-resort-navy dark:text-resort-orange mb-4">Getting here</h3>
+              <h3 className="text-2xl font-serif text-resort-navy dark:text-resort-gold mb-4">Getting here</h3>
               <ul className="space-y-3">
                 {gettingThere.map((item) => (
                   <li key={item} className="flex gap-3 text-resort-navy/80 dark:text-resort-cream/80">
@@ -149,13 +149,13 @@ export default function Home() {
               <div className="mt-8 space-y-4">
                 <div>
                   <h4 className="font-semibold text-resort-navy dark:text-resort-cream">Phone / WhatsApp</h4>
-                  <a href={site.contact.phoneHref} className="text-resort-navy/70 dark:text-resort-cream/70 hover:text-resort-orange transition">
+                  <a href={site.contact.phoneHref} className="text-resort-navy/70 dark:text-resort-cream/70 hover:text-resort-orange dark:hover:text-resort-gold transition">
                     {site.contact.phoneDisplay}
                   </a>
                 </div>
                 <div>
                   <h4 className="font-semibold text-resort-navy dark:text-resort-cream">Email</h4>
-                  <a href={`mailto:${site.contact.email}`} className="text-resort-navy/70 dark:text-resort-cream/70 hover:text-resort-orange transition">
+                  <a href={`mailto:${site.contact.email}`} className="text-resort-navy/70 dark:text-resort-cream/70 hover:text-resort-orange dark:hover:text-resort-gold transition">
                     {site.contact.email}
                   </a>
                 </div>
@@ -167,7 +167,7 @@ export default function Home() {
       </section>
 
       {/* Booking Section */}
-      <section id="booking" className="px-4 sm:px-6 lg:px-8 py-16 sm:py-20 bg-resort-cream dark:bg-black transition-colors scroll-mt-24">
+      <section id="booking" className="px-4 sm:px-6 lg:px-8 py-16 sm:py-20 bg-resort-cream dark:bg-resort-dark transition-colors scroll-mt-24">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-10 sm:mb-12">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-resort-navy dark:text-resort-cream mb-4">Book Your Stay</h2>

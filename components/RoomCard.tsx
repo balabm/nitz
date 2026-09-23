@@ -16,7 +16,7 @@ export default function RoomCard({ room }: { room: Room }) {
   const next = () => setIndex((i) => (i + 1) % images.length);
 
   return (
-    <article className="bg-white/95 dark:bg-black/95 backdrop-blur rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-transparent dark:border-resort-cream/10 flex flex-col">
+    <article className="bg-white/95 dark:bg-white/5 backdrop-blur rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-transparent dark:border-resort-cream/10 flex flex-col">
       <div className="relative h-64 md:h-72 w-full group">
         <Image
           key={`${theme}-${room.id}-${index}`}
@@ -66,7 +66,7 @@ export default function RoomCard({ room }: { room: Room }) {
       </div>
 
       <div className="p-6 flex flex-col flex-1">
-        <h3 className="text-2xl font-serif mb-1 text-resort-navy dark:text-resort-orange">{room.name}</h3>
+        <h3 className="text-2xl font-serif mb-1 text-resort-navy dark:text-resort-gold">{room.name}</h3>
         <p className="text-xs uppercase tracking-wide text-resort-navy/60 dark:text-resort-cream/60 mb-3">
           {room.occupancy}
         </p>
@@ -89,7 +89,7 @@ export default function RoomCard({ room }: { room: Room }) {
             href={waLink(roomWaMessage(room.name))}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#25D366] text-white px-4 py-2.5 rounded-md hover:bg-[#1eb856] transition font-semibold text-sm whitespace-nowrap"
+            className="bg-resort-wa text-white px-4 py-2.5 rounded-md hover:bg-resort-wa-dark transition font-semibold text-sm whitespace-nowrap"
           >
             Book on WhatsApp
           </a>

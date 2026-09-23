@@ -13,7 +13,7 @@ export default function ContactMap() {
         allowFullScreen
         referrerPolicy="no-referrer-when-downgrade"
       />
-      <div className="bg-white/90 dark:bg-black/90 px-4 py-3 flex items-center justify-between gap-3">
+      <div className="bg-white/90 dark:bg-white/5 px-4 py-3 flex items-center justify-between gap-3">
         <p className="text-xs sm:text-sm text-resort-navy/70 dark:text-resort-cream/70">
           {site.address}
         </p>
