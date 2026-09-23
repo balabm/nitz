@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTheme } from './ThemeProvider';
 import { getMediaForTheme } from '../lib/mediaAssets';
+import { genericWaMessage, site, waLink } from '../lib/siteConfig';
 import Image from 'next/image';
 
 export default function Hero() {
@@ -46,7 +47,7 @@ export default function Hero() {
           >
             <Image
               src={heroImages[currentImageIndex]}
-              alt={`Auroville Resort ${theme === 'light' ? 'Day' : 'Night'} View`}
+              alt={`${site.name} — ${theme === 'light' ? 'day' : 'night'} view`}
               fill
               className="object-cover"
               priority
@@ -77,23 +78,29 @@ export default function Hero() {
           </h1>
 
           <p className="mt-4 text-base sm:text-lg md:text-xl max-w-2xl mx-auto text-resort-cream/95 drop-shadow-lg">
-            Experience luxury living in Auroville ✨
+            {site.tagline}
           </p>
-          
-          <p className="mt-2 text-sm sm:text-base md:text-lg max-w-2xl mx-auto text-resort-cream/90 drop-shadow-lg">
-            Beautifully designed rooms with private jacuzzi
-          </p>
+
+          <div className="mt-5 flex flex-wrap items-center justify-center gap-2 text-xs sm:text-sm">
+            {['5 private rooms', 'Jacuzzi & Balcony rooms', 'Pet-friendly*', `Check-in ${site.policies.checkIn}`].map((chip) => (
+              <span key={chip} className="bg-white/15 backdrop-blur text-resort-cream px-3 py-1.5 rounded-full border border-white/20">
+                {chip}
+              </span>
+            ))}
+          </div>
 
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="#booking"
-              className="w-full sm:w-auto bg-resort-orange text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-resort-gold focus:outline-none focus:ring-4 focus:ring-resort-orange/40 transition"
+              href={waLink(genericWaMessage)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto bg-[#25D366] text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-[#1eb856] focus:outline-none focus:ring-4 focus:ring-[#25D366]/40 transition"
             >
-              Book Now
+              Book on WhatsApp
             </a>
 
-            <a href="#gallery" className="underline text-white hover:text-resort-cream transition">
-              Explore Gallery
+            <a href="#tour" className="underline text-white hover:text-resort-cream transition">
+              Take the 360° tour
             </a>
           </div>
         </motion.div>

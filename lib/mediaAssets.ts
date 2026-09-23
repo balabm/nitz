@@ -1,6 +1,9 @@
 // Media categorization based on image analysis
 // Day images: Brighter, warmer tones from /media/ folder
 // Night images: Beautiful nighttime shots from /media/night/ folder
+//
+// TODO(owner): verify which photos belong to which room type and
+// re-map `rooms.jacuzzi` / `rooms.balcony` accordingly.
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 const withBasePath = (path: string) => `${basePath}${path}`;
@@ -30,14 +33,21 @@ export const mediaAssets = {
       withBasePath('/media/WAA_6703-HDR.JPG'),
       withBasePath('/media/WAA_6706-HDR.JPG')
     ],
-    accommodations: [
-      withBasePath('/media/WAA_6656-HDR.JPG'),
-      withBasePath('/media/WAA_6670-HDR.JPG'),
-      withBasePath('/media/WAA_6682-HDR.JPG')
-    ],
-    spa: withBasePath('/media/WAA_6700-HDR.JPG'),
-    dining: withBasePath('/media/WAA_6694-HDR.JPG'),
-    experiences: withBasePath('/media/WAA_6706-HDR.JPG')
+    rooms: {
+      jacuzzi: [
+        withBasePath('/media/WAA_6656-HDR.JPG'),
+        withBasePath('/media/WAA_6670-HDR.JPG'),
+        withBasePath('/media/WAA_6685-HDR.JPG')
+      ],
+      balcony: [
+        withBasePath('/media/WAA_6682-HDR.JPG'),
+        withBasePath('/media/WAA_6691-HDR.JPG'),
+        withBasePath('/media/WAA_6679-HDR.JPG')
+      ]
+    },
+    amenities: withBasePath('/media/WAA_6700-HDR.JPG'),
+    explore: withBasePath('/media/WAA_6706-HDR.JPG'),
+    policies: withBasePath('/media/WAA_6694-HDR.JPG')
   },
   night: {
     hero: [
@@ -70,16 +80,35 @@ export const mediaAssets = {
       withBasePath('/media/night/DSC00098-HDR-Pano.JPG'),
       withBasePath('/media/night/DSC00098-HDR-Pano-2.JPG')
     ],
-    accommodations: [
-      withBasePath('/media/night/DSC00170-HDR.JPG'),
-      withBasePath('/media/night/DSC00173-HDR.JPG'),
-      withBasePath('/media/night/DSC00176-HDR.JPG')
-    ],
-    spa: withBasePath('/media/night/DSC00185-HDR.JPG'),
-    dining: withBasePath('/media/night/DSC00146-HDR.JPG'),
-    experiences: withBasePath('/media/night/DSC00098-HDR-Pano.JPG')
+    rooms: {
+      jacuzzi: [
+        withBasePath('/media/night/DSC00170-HDR.JPG'),
+        withBasePath('/media/night/DSC00173-HDR.JPG'),
+        withBasePath('/media/night/DSC00179-HDR.JPG')
+      ],
+      balcony: [
+        withBasePath('/media/night/DSC00176-HDR.JPG'),
+        withBasePath('/media/night/DSC00185-HDR.JPG'),
+        withBasePath('/media/night/DSC00182-HDR.JPG')
+      ]
+    },
+    amenities: withBasePath('/media/night/DSC00185-HDR.JPG'),
+    explore: withBasePath('/media/night/DSC00098-HDR-Pano.JPG'),
+    policies: withBasePath('/media/night/DSC00146-HDR.JPG')
   }
 };
+
+// Equirectangular panoramas (~2:1) for the 360° tour — night shots.
+export const panos = [
+  {
+    src: withBasePath('/media/night/DSC00098-HDR-Pano.JPG'),
+    label: 'Night Terrace'
+  },
+  {
+    src: withBasePath('/media/night/DSC00098-HDR-Pano-2.JPG'),
+    label: 'Night Garden'
+  }
+];
 
 export function getMediaForTheme(section: keyof typeof mediaAssets.day, theme: 'light' | 'dark') {
   return theme === 'light' ? mediaAssets.day[section] : mediaAssets.night[section];

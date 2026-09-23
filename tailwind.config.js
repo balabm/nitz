@@ -22,8 +22,8 @@ module.exports = {
         'gold-accent': '#d97706'
       },
       fontFamily: {
-        serif: ['Playfair Display', 'serif'],
-        sans: ['Inter', 'ui-sans-serif', 'system-ui']
+        serif: ['var(--font-serif)', 'Playfair Display', 'serif'],
+        sans: ['var(--font-sans)', 'Inter', 'ui-sans-serif', 'system-ui']
       }
     }
   },
