@@ -27,3 +27,8 @@ Thumbs.db
 
 # coverage
 coverage
+
+# test artifacts
+.playwright-mcp
+*.png
+*.jpeg
