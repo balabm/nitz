@@ -1,0 +1,315 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "NITZ THE LOFT" [ref=e5] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=e6]:
+        - link "Rooms" [ref=e7] [cursor=pointer]:
+          - /url: "#rooms"
+        - link "Amenities" [ref=e8] [cursor=pointer]:
+          - /url: "#amenities"
+        - link "360° Tour" [ref=e9] [cursor=pointer]:
+          - /url: "#tour"
+        - link "Gallery" [ref=e10] [cursor=pointer]:
+          - /url: "#gallery"
+        - link "Explore" [ref=e11] [cursor=pointer]:
+          - /url: "#explore"
+        - link "Location" [ref=e12] [cursor=pointer]:
+          - /url: "#location"
+        - link "Book Now" [ref=e13] [cursor=pointer]:
+          - /url: "#booking"
+  - main [ref=e14]:
+    - main [ref=e15]:
+      - region "Hero" [ref=e16]:
+        - generic:
+          - generic:
+            - img "Nitz The Loft — day view"
+        - generic [ref=e18]:
+          - heading "NITZ THE LOFT" [level=1] [ref=e19]
+          - paragraph [ref=e20]: A quiet private stay in the green heart of Auroville
+          - generic [ref=e21]:
+            - generic [ref=e22]: 5 private rooms
+            - generic [ref=e23]: Jacuzzi & Balcony rooms
+            - generic [ref=e24]: Pet-friendly*
+            - generic [ref=e25]: Check-in 12:00 PM
+          - generic [ref=e26]:
+            - link "Book on WhatsApp" [ref=e27] [cursor=pointer]:
+              - /url: https://wa.me/918903395109?text=Hi%20Nitz%20The%20Loft!%20I'd%20like%20to%20enquire%20about%20a%20booking.
+            - link "Take the 360° tour" [ref=e28] [cursor=pointer]:
+              - /url: "#tour"
+        - generic [ref=e29]: Loading...
+      - generic [ref=e32]:
+        - heading "Rooms" [level=2] [ref=e33]
+        - paragraph [ref=e34]: Five private rooms across two floors — three ground-floor Jacuzzi Rooms and two first-floor Balcony Rooms, each with its own entrance and bathroom.
+        - generic [ref=e35]:
+          - article [ref=e36]:
+            - generic [ref=e37]:
+              - img "Jacuzzi Room — Ground Floor" [ref=e38]
+              - generic [ref=e39]: Ground Floor
+              - generic [ref=e40]: 3 rooms
+              - button "Previous Jacuzzi Room photo" [ref=e41] [cursor=pointer]
+              - button "Next Jacuzzi Room photo" [ref=e44] [cursor=pointer]
+              - generic [ref=e47]:
+                - button "Photo 1 of 3" [ref=e48] [cursor=pointer]
+                - button "Photo 2 of 3" [ref=e49] [cursor=pointer]
+                - button "Photo 3 of 3" [ref=e50] [cursor=pointer]
+            - generic [ref=e51]:
+              - heading "Jacuzzi Room" [level=3] [ref=e52]
+              - paragraph [ref=e53]: Couples & families (extra bed on request)
+              - paragraph [ref=e54]: Step straight into your own private jacuzzi. Ground-floor rooms with private access — made for slow evenings.
+              - list [ref=e55]:
+                - listitem [ref=e56]: • Private jacuzzi
+                - listitem [ref=e57]: • Private bathroom
+                - listitem [ref=e58]: • Air conditioning
+                - listitem [ref=e59]: • Free Wi-Fi
+                - listitem [ref=e60]: • Electric kettle & tea/coffee
+                - listitem [ref=e61]: • Private room access
+              - generic [ref=e62]:
+                - generic [ref=e63]:
+                  - text: ₹4,500
+                  - generic [ref=e64]: per night, onwards
+                - link "Book on WhatsApp" [ref=e65] [cursor=pointer]:
+                  - /url: https://wa.me/918903395109?text=Hi%20Nitz%20The%20Loft!%20I'm%20interested%20in%20the%20Jacuzzi%20Room.%20Could%20you%20share%20availability%20and%20rates%3F
+          - article [ref=e66]:
+            - generic [ref=e67]:
+              - img "Balcony Room — First Floor" [ref=e68]
+              - generic [ref=e69]: First Floor
+              - generic [ref=e70]: 2 rooms
+              - button "Previous Balcony Room photo" [ref=e71] [cursor=pointer]
+              - button "Next Balcony Room photo" [ref=e74] [cursor=pointer]
+              - generic [ref=e77]:
+                - button "Photo 1 of 3" [ref=e78] [cursor=pointer]
+                - button "Photo 2 of 3" [ref=e79] [cursor=pointer]
+                - button "Photo 3 of 3" [ref=e80] [cursor=pointer]
+            - generic [ref=e81]:
+              - heading "Balcony Room" [level=3] [ref=e82]
+              - paragraph [ref=e83]: Couples & families (extra bed on request)
+              - paragraph [ref=e84]: Wake up to green views from your private balcony. First-floor rooms with a double bed and open sky.
+              - list [ref=e85]:
+                - listitem [ref=e86]: • Private balcony
+                - listitem [ref=e87]: • Double bed
+                - listitem [ref=e88]: • Private bathroom
+                - listitem [ref=e89]: • Air conditioning
+                - listitem [ref=e90]: • Free Wi-Fi
+                - listitem [ref=e91]: • Electric kettle & tea/coffee
+              - generic [ref=e92]:
+                - generic [ref=e93]:
+                  - text: ₹4,500
+                  - generic [ref=e94]: per night, onwards
+                - link "Book on WhatsApp" [ref=e95] [cursor=pointer]:
+                  - /url: https://wa.me/918903395109?text=Hi%20Nitz%20The%20Loft!%20I'm%20interested%20in%20the%20Balcony%20Room.%20Could%20you%20share%20availability%20and%20rates%3F
+      - generic [ref=e97]:
+        - heading "Amenities" [level=2] [ref=e98]
+        - paragraph [ref=e99]: Everything you need for a comfortable, private stay.
+        - generic [ref=e100]:
+          - generic [ref=e101]:
+            - paragraph [ref=e105]: Private Jacuzzi
+            - paragraph [ref=e106]: Jacuzzi rooms
+          - paragraph [ref=e112]: Private Bathrooms
+          - paragraph [ref=e127]: Air Conditioning
+          - paragraph [ref=e133]: Free Wi-Fi
+          - paragraph [ref=e138]: Private Parking
+          - paragraph [ref=e142]: Kettle & Tea/Coffee
+          - paragraph [ref=e147]: Basic Toiletries
+          - paragraph [ref=e154]: Balcony / Terrace
+          - paragraph [ref=e159]: Private Room Access
+          - paragraph [ref=e164]: Quiet Surroundings
+          - generic [ref=e165]:
+            - paragraph [ref=e171]: Pet-Friendly
+            - paragraph [ref=e172]: Property rules apply
+        - paragraph [ref=e173]: "* Jacuzzi in Jacuzzi Rooms only · Pet-friendly subject to property rules."
+      - generic [ref=e175]:
+        - heading "Step Inside" [level=2] [ref=e176]
+        - paragraph [ref=e177]: A 360° look at the loft after dark — drag anywhere to look around.
+        - generic [ref=e178]: Loading 360° view…
+      - generic [ref=e181]:
+        - heading "Gallery" [level=2] [ref=e182]
+        - paragraph [ref=e183]: The loft by day and by night — switch views to see both.
+        - generic [ref=e184]:
+          - generic [ref=e185] [cursor=pointer]:
+            - img "Gallery image 1 - Day view" [ref=e186]
+            - generic [ref=e187]: View
+          - generic [ref=e189] [cursor=pointer]:
+            - img "Gallery image 2 - Day view" [ref=e190]
+            - generic [ref=e191]: View
+          - generic [ref=e193] [cursor=pointer]:
+            - img "Gallery image 3 - Day view" [ref=e194]
+            - generic [ref=e195]: View
+          - generic [ref=e197] [cursor=pointer]:
+            - img "Gallery image 4 - Day view" [ref=e198]
+            - generic [ref=e199]: View
+          - generic [ref=e201] [cursor=pointer]:
+            - img "Gallery image 5 - Day view" [ref=e202]
+            - generic [ref=e203]: View
+          - generic [ref=e205] [cursor=pointer]:
+            - img "Gallery image 6 - Day view" [ref=e206]
+            - generic [ref=e207]: View
+          - generic [ref=e209] [cursor=pointer]:
+            - img "Gallery image 7 - Day view" [ref=e210]
+            - generic [ref=e211]: View
+          - generic [ref=e213] [cursor=pointer]:
+            - img "Gallery image 8 - Day view" [ref=e214]
+            - generic [ref=e215]: View
+          - generic [ref=e217] [cursor=pointer]:
+            - img "Gallery image 9 - Day view" [ref=e218]
+            - generic [ref=e219]: View
+          - generic [ref=e221] [cursor=pointer]:
+            - img "Gallery image 10 - Day view" [ref=e222]
+            - generic [ref=e223]: View
+          - generic [ref=e225] [cursor=pointer]:
+            - img "Gallery image 11 - Day view" [ref=e226]
+            - generic [ref=e227]: View
+          - generic [ref=e229] [cursor=pointer]:
+            - img "Gallery image 12 - Day view" [ref=e230]
+            - generic [ref=e231]: View
+          - generic [ref=e233] [cursor=pointer]:
+            - img "Gallery image 13 - Day view" [ref=e234]
+            - generic [ref=e235]: View
+          - generic [ref=e237] [cursor=pointer]:
+            - img "Gallery image 14 - Day view" [ref=e238]
+            - generic [ref=e239]: View
+      - generic [ref=e242]:
+        - heading "Explore Auroville" [level=2] [ref=e243]
+        - paragraph [ref=e244]: Tucked into the Universal Farm House layout in Edayanchavadi — quiet at home, minutes from everything Auroville.
+        - generic [ref=e245]:
+          - generic [ref=e246]:
+            - paragraph [ref=e250]: ~10 min
+            - heading "Matrimandir & Visitor Centre" [level=3] [ref=e251]
+            - paragraph [ref=e252]: Auroville’s golden sphere and viewing point, plus the Visitor Centre’s boutiques, cafés and exhibitions.
+          - generic [ref=e253]:
+            - paragraph [ref=e257]: 5–15 min
+            - heading "Auroville Cafés & Boutiques" [level=3] [ref=e258]
+            - paragraph [ref=e259]: Bakeries, wood-fired pizza, artisan shops and quiet garden cafés scattered through the green belt.
+          - generic [ref=e260]:
+            - paragraph [ref=e266]: On your doorstep
+            - heading "Edayanchavadi Village" [level=3] [ref=e267]
+            - paragraph [ref=e268]: A living Tamil village at the edge of Auroville — temples, markets and everyday local colour.
+          - generic [ref=e269]:
+            - paragraph [ref=e275]: ~25 min
+            - heading "Pondicherry White Town" [level=3] [ref=e276]
+            - paragraph [ref=e277]: French-quarter streets, the Promenade beach, and heritage cafés — an easy evening trip.
+      - region "Evening at the loft" [ref=e278]:
+        - img "Evening at Nitz The Loft" [ref=e280]
+        - generic [ref=e282]:
+          - heading "Quiet hours, starlit skies" [level=2] [ref=e283]
+          - paragraph [ref=e284]: Private surroundings at the edge of Auroville's green belt.
+      - generic [ref=e286]:
+        - heading "Good to Know" [level=2] [ref=e287]
+        - paragraph [ref=e288]: House policies, plainly stated.
+        - generic [ref=e289]:
+          - generic [ref=e290]:
+            - heading "Check-in 12:00 PM" [level=3] [ref=e294]
+            - paragraph [ref=e295]: Check-out 11:00 AM. Early check-in and late check-out on request — subject to availability, charges may apply.
+          - generic [ref=e296]:
+            - heading "Meals" [level=3] [ref=e302]
+            - paragraph [ref=e303]: Meals are not included in the room tariff. Tea, coffee and refreshments can be arranged on request at additional charge.
+          - generic [ref=e304]:
+            - heading "Extra Bed & Guests" [level=3] [ref=e308]
+            - paragraph [ref=e309]: "Extra bed: subject to availability; additional charges apply. Additional guests: additional charges may apply."
+          - generic [ref=e310]:
+            - heading "Pets" [level=3] [ref=e316]
+            - paragraph [ref=e317]: Pet-friendly, subject to property rules. Please mention your pet when booking.
+      - generic [ref=e319]:
+        - heading "Find Us" [level=2] [ref=e320]
+        - paragraph [ref=e321]: Universal Farm House, III Cross, Edayanchavadi, Auroville, Puducherry – 605101
+        - generic [ref=e322]:
+          - generic [ref=e323]:
+            - heading "Getting here" [level=3] [ref=e324]
+            - list [ref=e325]:
+              - listitem [ref=e326]:
+                - generic [ref=e331]: ≈ 25 min drive from Pondicherry town / White Town
+              - listitem [ref=e332]:
+                - generic [ref=e336]: ≈ 10 min from Auroville Visitor Centre
+              - listitem [ref=e337]:
+                - generic [ref=e340]: ≈ 15 min from Puducherry Airport (PNY)
+              - listitem [ref=e341]:
+                - generic [ref=e345]: Private parking available on the property
+            - generic [ref=e346]:
+              - generic [ref=e347]:
+                - heading "Phone / WhatsApp" [level=4] [ref=e348]
+                - link "+91 89033 95109" [ref=e349] [cursor=pointer]:
+                  - /url: tel:+918903395109
+              - generic [ref=e350]:
+                - heading "Email" [level=4] [ref=e351]
+                - link "nitztheloft@gmail.com" [ref=e352] [cursor=pointer]:
+                  - /url: mailto:nitztheloft@gmail.com
+          - generic [ref=e353]:
+            - iframe [ref=e354]
+            - generic [ref=e355]:
+              - paragraph [ref=e356]: Universal Farm House, III Cross, Edayanchavadi, Auroville, Puducherry – 605101
+              - link "Get directions" [ref=e357] [cursor=pointer]:
+                - /url: https://www.google.com/maps/search/?api=1&query=Universal+Farm+House+III+Cross+Edayanchavadi+Auroville+605101
+      - generic [ref=e364]:
+        - generic [ref=e365]:
+          - heading "Book Your Stay" [level=2] [ref=e366]
+          - paragraph [ref=e367]: Pick your dates — we'll open WhatsApp with your enquiry ready to send.
+        - generic [ref=e368]:
+          - textbox "Full name" [ref=e369]
+          - combobox "Room type" [ref=e370]:
+            - option "Any room" [selected]
+            - option "Jacuzzi Room — Ground Floor"
+            - option "Balcony Room — First Floor"
+          - generic [ref=e371]:
+            - generic [ref=e372]: Check-in · from 12:00 PM
+            - textbox "Check-in date" [ref=e373]
+          - generic [ref=e374]:
+            - generic [ref=e375]: Check-out · by 11:00 AM
+            - textbox "Check-out date" [ref=e376]
+          - combobox "Number of guests" [ref=e377]:
+            - option "1 guest"
+            - option "2 guests" [selected]
+            - option "3 guests"
+            - option "4 guests"
+            - option "5 guests"
+            - option "6 guests"
+            - option "7+ guests"
+          - generic [ref=e378]: Extra bed & additional guests may incur charges.
+          - generic [ref=e379]:
+            - paragraph [ref=e380]:
+              - text: Prefer to talk?
+              - link "Call us" [ref=e381] [cursor=pointer]:
+                - /url: tel:+918903395109
+              - text: or
+              - link "email us" [ref=e382] [cursor=pointer]:
+                - /url: mailto:nitztheloft@gmail.com
+              - text: .
+            - button "Send Booking Request on WhatsApp" [ref=e383] [cursor=pointer]
+  - contentinfo [ref=e384]:
+    - generic [ref=e385]:
+      - generic [ref=e386]:
+        - generic [ref=e387]:
+          - heading "NITZ THE LOFT" [level=3] [ref=e388]
+          - paragraph [ref=e389]: A quiet private stay in the green heart of Auroville
+          - paragraph [ref=e390]: 5 private rooms · 3 ground-floor Jacuzzi Rooms · 2 first-floor Balcony Rooms.
+        - generic [ref=e391]:
+          - heading "Contact" [level=4] [ref=e392]
+          - generic [ref=e393]:
+            - paragraph [ref=e394]: Universal Farm House, III Cross, Edayanchavadi, Auroville, Puducherry – 605101
+            - paragraph [ref=e398]:
+              - link "+91 89033 95109" [ref=e401] [cursor=pointer]:
+                - /url: tel:+918903395109
+            - paragraph [ref=e402]:
+              - link "nitztheloft@gmail.com" [ref=e406] [cursor=pointer]:
+                - /url: mailto:nitztheloft@gmail.com
+        - generic [ref=e407]:
+          - heading "Quick Links" [level=4] [ref=e408]
+          - generic [ref=e409]:
+            - link "Rooms" [ref=e410] [cursor=pointer]:
+              - /url: "#rooms"
+            - link "Amenities" [ref=e411] [cursor=pointer]:
+              - /url: "#amenities"
+            - link "360° Tour" [ref=e412] [cursor=pointer]:
+              - /url: "#tour"
+            - link "Good to Know" [ref=e413] [cursor=pointer]:
+              - /url: "#policies"
+            - link "Book Now" [ref=e414] [cursor=pointer]:
+              - /url: "#booking"
+      - generic [ref=e415]:
+        - paragraph [ref=e416]: Check-in 12:00 PM · Check-out 11:00 AM · Pet-friendly*
+        - paragraph [ref=e417]: © 2026 NITZ THE LOFT, Auroville. All rights reserved.
+  - link "Book on WhatsApp" [ref=e419] [cursor=pointer]:
+    - /url: https://wa.me/918903395109?text=Hi%20Nitz%20The%20Loft!%20I'd%20like%20to%20enquire%20about%20a%20booking.
+  - button "Switch to night mode" [ref=e423] [cursor=pointer]:
+    - generic [ref=e426]: Night View

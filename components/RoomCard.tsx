@@ -2,8 +2,10 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useTheme } from './ThemeProvider';
 import { getMediaForTheme } from '../lib/mediaAssets';
+import { getBlur } from '../lib/blurData';
 import { roomWaMessage, waLink, type Room } from '../lib/siteConfig';
 
 export default function RoomCard({ room }: { room: Room }) {
@@ -25,6 +27,8 @@ export default function RoomCard({ room }: { room: Room }) {
           fill
           className="object-cover"
           sizes="(min-width: 1024px) 50vw, 100vw"
+          placeholder="blur"
+          blurDataURL={getBlur(images[index])}
         />
         <span className="absolute top-3 left-3 bg-black/60 text-white text-xs font-semibold px-3 py-1 rounded-full backdrop-blur">
           {room.floor}
@@ -40,7 +44,7 @@ export default function RoomCard({ room }: { room: Room }) {
               aria-label={`Previous ${room.name} photo`}
               className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white rounded-full w-9 h-9 flex items-center justify-center opacity-0 group-hover:opacity-100 focus:opacity-100 transition hover:bg-black/70"
             >
-              ‹
+              <ChevronLeft className="w-5 h-5" />
             </button>
             <button
               type="button"
@@ -48,7 +52,7 @@ export default function RoomCard({ room }: { room: Room }) {
               aria-label={`Next ${room.name} photo`}
               className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white rounded-full w-9 h-9 flex items-center justify-center opacity-0 group-hover:opacity-100 focus:opacity-100 transition hover:bg-black/70"
             >
-              ›
+              <ChevronRight className="w-5 h-5" />
             </button>
             <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5">
               {images.map((_, i) => (

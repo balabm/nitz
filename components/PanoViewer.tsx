@@ -3,8 +3,10 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
+import { useReducedMotion } from 'framer-motion';
 import * as THREE from 'three';
 import Image from 'next/image';
+import { Maximize } from 'lucide-react';
 import { panos } from '../lib/mediaAssets';
 
 function Sphere({ src, onError }: { src: string; onError: () => void }) {
@@ -50,6 +52,7 @@ export default function PanoViewer() {
   const [failed, setFailed] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const handleError = useCallback(() => setFailed(true), []);
+  const reduceMotion = useReducedMotion();
 
   const toggleFullscreen = () => {
     const el = containerRef.current;
@@ -76,13 +79,17 @@ export default function PanoViewer() {
           </div>
         </div>
       ) : (
-        <Canvas camera={{ position: [0, 0, 0.1], fov: 75 }} dpr={[1, 2]}>
+        <Canvas
+          camera={{ position: [0, 0, 0.1], fov: 75 }}
+          dpr={[1, 1.5]}
+          gl={{ powerPreference: 'low-power' }}
+        >
           <Sphere src={panos[active].src} onError={handleError} />
           <OrbitControls
             enablePan={false}
             enableZoom={false}
             rotateSpeed={-0.35}
-            autoRotate
+            autoRotate={!reduceMotion}
             autoRotateSpeed={0.4}
             enableDamping
             dampingFactor={0.08}
@@ -115,7 +122,7 @@ export default function PanoViewer() {
         className="absolute top-4 right-4 bg-black/50 backdrop-blur text-white px-3 py-1.5 rounded-full text-xs font-semibold hover:bg-black/70 transition"
         aria-label="Toggle fullscreen"
       >
-        ⛶ Fullscreen
+        <span className="inline-flex items-center gap-1.5"><Maximize className="w-3.5 h-3.5" /> Fullscreen</span>
       </button>
 
       <p className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white/80 text-xs bg-black/40 backdrop-blur px-3 py-1.5 rounded-full pointer-events-none">

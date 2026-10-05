@@ -1,5 +1,6 @@
 "use client";
 
+import { ExternalLink } from 'lucide-react';
 import { site } from '../lib/siteConfig';
 
 export default function ContactMap() {
@@ -23,7 +24,7 @@ export default function ContactMap() {
           rel="noopener noreferrer"
           className="text-xs sm:text-sm font-semibold text-resort-orange hover:text-resort-gold transition whitespace-nowrap"
         >
-          Get directions →
+          <span className="inline-flex items-center gap-1">Get directions <ExternalLink className="w-3.5 h-3.5" /></span>
         </a>
       </div>
     </div>

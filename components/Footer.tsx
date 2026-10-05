@@ -1,3 +1,4 @@
+import { MapPin, Phone, Mail } from 'lucide-react';
 import { site } from '../lib/siteConfig';
 
 export default function Footer() {
@@ -20,15 +21,18 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold text-resort-cream mb-3">Contact</h4>
             <div className="space-y-2 text-sm text-resort-cream/80">
-              <p>📍 {site.address}</p>
-              <p>
-                📞{' '}
+              <p className="flex items-start gap-2">
+                <MapPin className="w-4 h-4 mt-0.5 shrink-0 text-resort-gold" aria-hidden="true" />
+                {site.address}
+              </p>
+              <p className="flex items-center gap-2">
+                <Phone className="w-4 h-4 shrink-0 text-resort-gold" aria-hidden="true" />
                 <a href={site.contact.phoneHref} className="hover:text-resort-gold transition">
                   {site.contact.phoneDisplay}
                 </a>
               </p>
-              <p>
-                ✉️{' '}
+              <p className="flex items-center gap-2">
+                <Mail className="w-4 h-4 shrink-0 text-resort-gold" aria-hidden="true" />
                 <a href={`mailto:${site.contact.email}`} className="hover:text-resort-gold transition">
                   {site.contact.email}
                 </a>

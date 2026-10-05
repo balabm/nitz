@@ -2,6 +2,7 @@
 
 import { useTheme } from './ThemeProvider';
 import { motion } from 'framer-motion';
+import { Moon, Sun } from 'lucide-react';
 
 export default function ThemeToggle() {
   const { theme, toggleTheme } = useTheme();
@@ -16,12 +17,12 @@ export default function ThemeToggle() {
     >
       {theme === 'light' ? (
         <>
-          <span className="text-xl">🌙</span>
+          <Moon className="w-5 h-5" />
           <span className="text-sm font-medium hidden sm:inline">Night View</span>
         </>
       ) : (
         <>
-          <span className="text-xl">☀️</span>
+          <Sun className="w-5 h-5" />
           <span className="text-sm font-medium hidden sm:inline">Day View</span>
         </>
       )}

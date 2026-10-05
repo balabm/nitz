@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { useTheme } from './ThemeProvider';
 import { getMediaForTheme } from '../lib/mediaAssets';
+import { getBlur } from '../lib/blurData';
 import Image from 'next/image';
 
 export default function Gallery() {
@@ -38,6 +39,8 @@ export default function Gallery() {
               fill
               className="object-cover group-hover:scale-105 transition-transform duration-300"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              placeholder="blur"
+              blurDataURL={getBlur(imageSrc)}
             />
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
               <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity font-medium">View</span>

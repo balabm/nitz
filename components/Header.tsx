@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import { Menu, X } from 'lucide-react';
 
 const navLinks = [
   { href: '#rooms', label: 'Rooms' },
@@ -66,7 +67,7 @@ export default function Header() {
             onClick={() => setIsMenuOpen((v) => !v)}
             className="p-2 rounded-md text-resort-navy dark:text-resort-cream hover:bg-black/5 dark:hover:bg-white/10 transition"
           >
-            {isMenuOpen ? '✕' : '☰'}
+            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
       </div>
@@ -93,7 +94,7 @@ export default function Header() {
               onClick={closeMenu}
               className="absolute top-4 right-4 p-2 rounded-md text-resort-navy dark:text-resort-cream hover:bg-black/5 dark:hover:bg-white/10 transition"
             >
-              ✕
+              <X className="w-5 h-5" />
             </button>
             <nav className="flex flex-col gap-4">
               {navLinks.map((l) => (

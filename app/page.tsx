@@ -11,6 +11,7 @@ import ExploreAuroville from '../components/ExploreAuroville';
 import ContactMap from '../components/ContactMap';
 import { useTheme } from '../components/ThemeProvider';
 import { getMediaForTheme } from '../lib/mediaAssets';
+import { getBlur } from '../lib/blurData';
 import { gettingThere, rooms, site } from '../lib/siteConfig';
 import Image from 'next/image';
 
@@ -77,7 +78,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-resort-navy dark:text-resort-cream mb-4">Gallery</h2>
           <p className="text-base sm:text-lg text-resort-navy/80 dark:text-resort-cream/80 mb-10 sm:mb-12 max-w-3xl">
-            The loft by day and by night — toggle the 🌙 to see both.
+            The loft by day and by night — switch views to see both.
           </p>
           <Gallery />
         </div>
@@ -106,6 +107,8 @@ export default function Home() {
             className="object-cover"
             sizes="100vw"
             quality={85}
+            placeholder="blur"
+            blurDataURL={getBlur(policiesImage)}
           />
           <div className="absolute inset-0 bg-black/55" />
         </div>
@@ -140,9 +143,9 @@ export default function Home() {
               <h3 className="text-2xl font-serif text-resort-navy dark:text-resort-gold mb-4">Getting here</h3>
               <ul className="space-y-3">
                 {gettingThere.map((item) => (
-                  <li key={item} className="flex gap-3 text-resort-navy/80 dark:text-resort-cream/80">
-                    <span aria-hidden="true">→</span>
-                    <span>{item}</span>
+                  <li key={item.text} className="flex gap-3 items-center text-resort-navy/80 dark:text-resort-cream/80">
+                    <item.icon className="w-4 h-4 shrink-0 text-resort-orange dark:text-resort-gold" aria-hidden="true" />
+                    <span>{item.text}</span>
                   </li>
                 ))}
               </ul>

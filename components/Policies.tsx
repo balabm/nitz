@@ -15,7 +15,11 @@ export default function Policies() {
           transition={{ duration: 0.4, delay: idx * 0.08 }}
           className="bg-white/90 dark:bg-white/5 backdrop-blur rounded-lg p-5 border border-resort-navy/10 dark:border-resort-cream/15"
         >
-          <div className="text-2xl mb-2" aria-hidden="true">{p.icon}</div>
+          <p.icon
+            className="w-6 h-6 mb-2 text-resort-orange dark:text-resort-gold"
+            strokeWidth={1.75}
+            aria-hidden="true"
+          />
           <h3 className="font-semibold text-resort-navy dark:text-resort-gold mb-1">{p.title}</h3>
           <p className="text-sm text-resort-navy/70 dark:text-resort-cream/70 leading-relaxed">{p.body}</p>
         </motion.div>

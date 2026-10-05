@@ -1,17 +1,22 @@
 "use client";
 
 import { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, useScroll, useTransform, useReducedMotion } from 'framer-motion';
 import { useTheme } from './ThemeProvider';
 import { getMediaForTheme } from '../lib/mediaAssets';
+import { getBlur } from '../lib/blurData';
 import { genericWaMessage, site, waLink } from '../lib/siteConfig';
 import Image from 'next/image';
 
 export default function Hero() {
   const { theme } = useTheme();
   const [loaded, setLoaded] = useState(false);
-  const [offset, setOffset] = useState(0);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const reduceMotion = useReducedMotion();
+
+  // Compositor-only parallax — no React re-render on scroll
+  const { scrollY } = useScroll();
+  const parallaxY = useTransform(scrollY, [0, 800], [0, 160]);
 
   const heroImages = getMediaForTheme('hero', theme) as string[];
 
@@ -23,19 +28,12 @@ export default function Hero() {
     return () => clearInterval(interval);
   }, [heroImages.length]);
 
-  useEffect(() => {
-    const onScroll = () => {
-      const y = window.scrollY;
-      setOffset(y * 0.2);
-    };
-
-    window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
-
   return (
     <section className="relative h-[100svh] w-full flex items-center justify-center overflow-hidden" aria-label="Hero">
-      <div className="absolute inset-0 w-full h-full pointer-events-none" style={{ transform: `translateY(${offset}px)` }}>
+      <motion.div
+        className="absolute inset-0 w-full h-full pointer-events-none"
+        style={{ y: reduceMotion ? 0 : parallaxY }}
+      >
         <AnimatePresence mode="wait">
           <motion.div
             key={`${theme}-${currentImageIndex}`}
@@ -54,10 +52,12 @@ export default function Hero() {
               quality={90}
               onLoad={() => setLoaded(true)}
               sizes="100vw"
+              placeholder="blur"
+              blurDataURL={getBlur(heroImages[currentImageIndex])}
             />
           </motion.div>
         </AnimatePresence>
-      </div>
+      </motion.div>
 
       <div className={`absolute inset-0 ${
         theme === 'light'

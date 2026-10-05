@@ -1,8 +1,30 @@
 // ============================================================
 // NITZ THE LOFT — single source of truth for all property data.
-// TODO(owner): replace the placeholder contact values below with
-// the real phone / WhatsApp / email before going live.
 // ============================================================
+
+import type { LucideIcon } from 'lucide-react';
+import {
+  Bath,
+  ShowerHead,
+  Snowflake,
+  Wifi,
+  SquareParking,
+  Coffee,
+  Sparkles,
+  Sunrise,
+  KeyRound,
+  Leaf,
+  PawPrint,
+  DoorOpen,
+  UtensilsCrossed,
+  BedDouble,
+  MapPin,
+  Car,
+  Plane,
+  Landmark,
+  Store,
+  Waves,
+} from 'lucide-react';
 
 export const site = {
   name: 'Nitz The Loft',
@@ -13,13 +35,10 @@ export const site = {
   addressShort: 'Edayanchavadi, Auroville 605101',
 
   contact: {
-    // TODO(owner): real phone number
-    phoneDisplay: '+91 90000 00000',
-    phoneHref: 'tel:+919000000000',
-    // TODO(owner): WhatsApp number in wa.me format — country code + digits only
-    whatsappNumber: '919000000000',
-    // TODO(owner): real email
-    email: 'stay@nitztheloft.com',
+    phoneDisplay: '+91 89033 95109',
+    phoneHref: 'tel:+918903395109',
+    whatsappNumber: '918903395109',
+    email: 'nitztheloft@gmail.com',
     // TODO(owner): optional Instagram handle URL, e.g. 'https://instagram.com/nitztheloft'
     instagram: '',
     mapsUrl:
@@ -100,71 +119,75 @@ export const rooms: Room[] = [
   },
 ];
 
-export const sharedAmenities: { icon: string; label: string; note?: string }[] = [
-  { icon: '🛁', label: 'Private Jacuzzi', note: 'Jacuzzi rooms' },
-  { icon: '🚿', label: 'Private Bathrooms' },
-  { icon: '❄️', label: 'Air Conditioning' },
-  { icon: '📶', label: 'Free Wi-Fi' },
-  { icon: '🅿️', label: 'Private Parking' },
-  { icon: '☕', label: 'Kettle & Tea/Coffee' },
-  { icon: '🧴', label: 'Basic Toiletries' },
-  { icon: '🌅', label: 'Balcony / Terrace' },
-  { icon: '🔑', label: 'Private Room Access' },
-  { icon: '🌿', label: 'Quiet Surroundings' },
-  { icon: '🐾', label: 'Pet-Friendly', note: 'Property rules apply' },
+export const sharedAmenities: { icon: LucideIcon; label: string; note?: string }[] = [
+  { icon: Bath, label: 'Private Jacuzzi', note: 'Jacuzzi rooms' },
+  { icon: ShowerHead, label: 'Private Bathrooms' },
+  { icon: Snowflake, label: 'Air Conditioning' },
+  { icon: Wifi, label: 'Free Wi-Fi' },
+  { icon: SquareParking, label: 'Private Parking' },
+  { icon: Coffee, label: 'Kettle & Tea/Coffee' },
+  { icon: Sparkles, label: 'Basic Toiletries' },
+  { icon: Sunrise, label: 'Balcony / Terrace' },
+  { icon: KeyRound, label: 'Private Room Access' },
+  { icon: Leaf, label: 'Quiet Surroundings' },
+  { icon: PawPrint, label: 'Pet-Friendly', note: 'Property rules apply' },
 ];
 
-export const policyCards: { icon: string; title: string; body: string }[] = [
+export const policyCards: { icon: LucideIcon; title: string; body: string }[] = [
   {
-    icon: '🕛',
+    icon: DoorOpen,
     title: `Check-in ${site.policies.checkIn}`,
     body: `Check-out ${site.policies.checkOut}. Early check-in and late check-out on request — subject to availability, charges may apply.`,
   },
   {
-    icon: '🍽️',
+    icon: UtensilsCrossed,
     title: 'Meals',
     body: site.policies.meals,
   },
   {
-    icon: '🛏️',
+    icon: BedDouble,
     title: 'Extra Bed & Guests',
     body: `Extra bed: ${site.policies.extraBed.toLowerCase()}. Additional guests: ${site.policies.extraGuests.toLowerCase()}.`,
   },
   {
-    icon: '🐾',
+    icon: PawPrint,
     title: 'Pets',
     body: `${site.policies.pets}. Please mention your pet when booking.`,
   },
 ];
 
-export const exploreItems: { title: string; distance: string; body: string }[] = [
+export const exploreItems: { icon: LucideIcon; title: string; distance: string; body: string }[] = [
   {
+    icon: Landmark,
     title: 'Matrimandir & Visitor Centre',
     distance: '~10 min',
     body: 'Auroville\u2019s golden sphere and viewing point, plus the Visitor Centre\u2019s boutiques, cafés and exhibitions.',
   },
   {
+    icon: Coffee,
     title: 'Auroville Cafés & Boutiques',
     distance: '5–15 min',
     body: 'Bakeries, wood-fired pizza, artisan shops and quiet garden cafés scattered through the green belt.',
   },
   {
+    icon: Store,
     title: 'Edayanchavadi Village',
     distance: 'On your doorstep',
     body: 'A living Tamil village at the edge of Auroville — temples, markets and everyday local colour.',
   },
   {
+    icon: Waves,
     title: 'Pondicherry White Town',
     distance: '~25 min',
     body: 'French-quarter streets, the Promenade beach, and heritage cafés — an easy evening trip.',
   },
 ];
 
-export const gettingThere: string[] = [
-  '≈ 25 min drive from Pondicherry town / White Town',
-  '≈ 10 min from Auroville Visitor Centre',
-  '≈ 15 min from Puducherry Airport (PNY)',
-  'Private parking available on the property',
+export const gettingThere: { icon: LucideIcon; text: string }[] = [
+  { icon: Car, text: '≈ 25 min drive from Pondicherry town / White Town' },
+  { icon: MapPin, text: '≈ 10 min from Auroville Visitor Centre' },
+  { icon: Plane, text: '≈ 15 min from Puducherry Airport (PNY)' },
+  { icon: SquareParking, text: 'Private parking available on the property' },
 ];
 
 // ---------- WhatsApp helpers ----------

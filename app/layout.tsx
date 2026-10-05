@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     siteName: 'Nitz The Loft',
     images: [
       {
-        url: 'media/WAA_6656-HDR.JPG',
+        url: 'media/WAA_6656-HDR.webp',
         width: 1200,
         height: 630,
         alt: 'Nitz The Loft — private rooms in Auroville'
